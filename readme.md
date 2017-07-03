@@ -15,6 +15,7 @@
 1. 安裝相關套件
 2. `karma init`
 3. 加入覆蓋率報告設定
+4. 加入單元測試報告設定及套件 `npm install mochawesome --save-dev`
 
 ```
 npm install karma karma-chrome-launcher karma-coverage karma-mocha --save-dev
@@ -22,4 +23,12 @@ npm install karma karma-chrome-launcher karma-coverage karma-mocha --save-dev
 
 ```
 karma start karma.conf.js
+```
+
+## Gulp ##
+1. 安裝相關套件
+
+
+```
+npm install gulp gulp-karma gulp-mocha --save-dev
 ```
