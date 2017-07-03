@@ -11,3 +11,9 @@
 1. 開啟/browser/index.html透過瀏覽器執行測試程式
 2. 透過`mocha`執行測試程式
 
+## Report ##
+1. 安裝相關套件
+
+```
+npm install karma karma-chrome-launcher karma-coverage karma-mocha --save-dev
+```
