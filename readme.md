@@ -1,3 +1,16 @@
+# ReadMe #
+撰寫js程式碼及js單元測試程式，透過自動化完成單元測試報告及程式碼覆蓋率。
+
+# How To Start #
+1. npm install
+2. bower install
+3. gulp
+
+* 程式碼覆蓋率報告(karma coverage)：/report/converage/chrome/index.html
+* 單元測試報告(mochawesome)：/report/all.html
+* 單元測試報告(以瀏覽器執行)：/browser/index.html
+
+
 ## Basic ##
 
 1. 新建.gitignore並執行`npm init`
@@ -27,7 +40,7 @@ karma start karma.conf.js
 
 ## Gulp ##
 1. 安裝相關套件
-
+2. 進行設定
 
 ```
 npm install gulp gulp-karma gulp-mocha --save-dev
