@@ -13,6 +13,7 @@
 
 ## Report ##
 1. 安裝相關套件
+2. `karma init`
 
 ```
 npm install karma karma-chrome-launcher karma-coverage karma-mocha --save-dev
