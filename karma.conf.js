@@ -16,7 +16,8 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'bower_components/chai/chai.js',
-      'src/*.js'
+      'src/*.js',
+      'test/*.js'
     ],
 
 
@@ -27,14 +28,34 @@ module.exports = function(config) {
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-    preprocessors: {
+      preprocessors: {
+      'browser/*.js': 'coverage',
     },
-
+	  plugins: [
+		  'karma-mocha',
+		  'karma-chrome-launcher',
+		  'karma-coverage'
+	  ],
+	  coverageReporter: {
+		  // cf. http://gotwarlost.github.com/istanbul/public/apidocs/
+		  //type: 'lcov',
+		  dir: 'report',
+          subdir: function(browser){
+            return 'converage/'+browser.toLowerCase().split(/[ /-]/)[0];
+          },
+          watermarks: {
+            statements: [ 50, 75 ],
+            functions: [ 50, 75 ],
+            branches: [ 50, 75 ],
+            lines: [ 50, 75 ]
+          }
+          // Would output the results into: './coverage/firefox/'
+	  },
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['progress','coverage'],
 
 
     // web server port

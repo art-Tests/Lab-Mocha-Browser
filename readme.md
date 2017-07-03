@@ -14,7 +14,12 @@
 ## Report ##
 1. 安裝相關套件
 2. `karma init`
+3. 加入覆蓋率報告設定
 
 ```
 npm install karma karma-chrome-launcher karma-coverage karma-mocha --save-dev
+```
+
+```
+karma start karma.conf.js
 ```
