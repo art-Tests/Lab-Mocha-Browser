@@ -1,0 +1,20 @@
+{
+  "name": "lab-mocha-browser",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "art"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "mocha"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
