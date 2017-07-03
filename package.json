@@ -12,9 +12,11 @@
   "author": "art",
   "license": "MIT",
   "devDependencies": {
+    "chai": "^4.0.2",
     "karma": "^1.7.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-coverage": "^1.1.1",
-    "karma-mocha": "^1.3.0"
+    "karma-mocha": "^1.3.0",
+    "mocha": "^3.4.2"
   }
 }
